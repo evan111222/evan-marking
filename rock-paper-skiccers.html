@@ -1,0 +1,63 @@
+<h1 align=center  >T1A11-Rock-Paper-Scissors-Fred.html</h2>
+
+
+Attempts: <input type=text id="myAttempts" value=0>
+
+
+<input type=button value="Rock" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 1){
+   document.myOutcome = 'Tie'
+   }
+   
+   document.getElementById('myOut').innerHTML = 'Rock ' +
+       document.myOutcome
+}">
+
+
+
+<input type=button value="Paper" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 1){
+   document.myOutcome = 'Tie'
+   }
+   
+   document.getElementById('myOut').innerHTML = 'Rock ' +
+       document.myOutcome
+}">
+
+
+
+<input type=button value="scissor" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+   if (document.myRandom == 1){
+   document.myOutcome = 'Tie'
+   }
+   
+   document.getElementById('myOut').innerHTML = 'Rock ' +
+       document.myOutcome
+}">
+
+
+
+
+
+
+
+
+<script>
+   document.myTotal = 0
+   document.myWins = 0
+</script>
+
+
+
+
+<div id="myOut">Output here</div>
+
+
+
+
