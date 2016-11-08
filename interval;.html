@@ -1,0 +1,159 @@
+<h1 align=center> T1A12-Interval by fred</h1>
+<script>
+function myFunction01(){
+    document.getElementById('myDiv1').style.left = 
+    parseInt(document.getElementById('myDiv1').style.left) + 5 + 'px'
+  
+  
+  
+  // too complex  
+  //  if (parseInt(document.getElementById('myDiv1').style.left) >= document.body.clientWidth-parseInt(document.getElementById('myDiv1').style.width)){
+  //    document.getElementById('myDiv1').style.left = document.body.clientWidth-parseInt(document.getElementById('myDiv1').style.width) + 'px'  
+  //  }
+  
+  // this is easier
+     if (parseInt(document.getElementById('myDiv1').style.left) >= 180){
+        document.getElementById('myDiv1').style.left = 180 + 'px'  
+    }   
+    
+}    
+</script>
+
+
+
+
+<input type=button value=move onclick="{
+  myFunction01()
+}">
+
+
+
+
+<input type=button value="width" onclick="{
+  alert(document.getElementById('myDiv1').style.width)
+}">
+
+
+
+
+<input type=button value="setTimeout" onclick="{
+  document.myTime01 = setTimeout('myFunction01()', 500)
+}">
+
+
+
+
+<input type=button value="setInterval" onclick="{
+  alert('get setInterval working')
+}">
+
+
+
+
+<input type=button value="clearInterval" onclick="{
+  alert('get clearInterval working')
+}">
+
+
+
+
+
+
+
+
+<div id="myDiv1" style="position:relative; left:0px; top:0px; width:50px; height:40px; " >
+    wow
+</div>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="setTimeout(myFunction, 3000);">Try it</button>
+
+<script>
+function myFunction() {
+    alert('Hello');
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+<button onclick="clearTimeout(myVar)">Stop it</button>
+
+<script>
+function myFunction() {
+    alert("Hello");
+}
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A script on this page starts this clock:</p>
+
+<p id="demo"></p>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A script on this page starts this clock:</p>
+
+<p id="demo"></p>
+
+<button onclick="clearInterval(myVar)">Stop time</button>
+
+<script>
+var myVar = setInterval(myTimer ,1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it". Wait 3 seconds, and the page will alert "Hello".</p>
+
+<button onclick="setTimeout(myFunction, 3000);">Try it</button>
+
+<script>
+function myFunction() {
+    alert('Hello');
+}
+</script>
+
+</body>
+</html>
+
