@@ -1,4 +1,8 @@
+
 T1A05-Array-Name.html
+
+
+
 
 
 
@@ -9,6 +13,7 @@ T1A05-Array-Name.html
     
 <script>
     myIntArray = new Array()
+
 
     myIntArray[0] =     45   
     myIntArray[1] =   3434634 
@@ -29,8 +34,11 @@ T1A05-Array-Name.html
     document.writeln('<br> Now The hard part 100  numbers<br>')
     
     document.writeln('<br> set the array<br>')
-    myMax = 100
+    myMax = 101
     for (myCount = 0;  myCount < myMax; myCount++){
+       
+         myIntArray[myCount] =    Math.floor(Math.random() * 888) + 111;  
+       
        
         
     }
@@ -38,7 +46,7 @@ T1A05-Array-Name.html
     document.writeln('<br> Print the array<br>')
     for (myCount = 0;  myCount < myMax; myCount++){
        
-        
+    document.writeln(myCount + ' = ' + myIntArray[myCount] + '<br>')
     }
     
     
